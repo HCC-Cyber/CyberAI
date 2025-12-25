@@ -1,0 +1,9 @@
+edge-tts == 7.0.0
+openai == 1.70.0
+pydub == 0.25.1
+opuslib_next == 1.1.2 
+numpy == 1.26.4
+funasr == 1.2.6
+torch == 2.2.2
+torchaudio == 2.2.2
+modelscope == 1.33.0
