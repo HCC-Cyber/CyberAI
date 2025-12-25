@@ -9,6 +9,6 @@ conda install conda-forge::ffmpeg -y
 //conda install -c conda-forge ffmpeg -y
 //conda install conda-forge::libopus -y
 
-pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+//pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 
 pip install -r requirements.txt
