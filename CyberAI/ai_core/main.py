@@ -11,6 +11,11 @@ if __name__ == "__main__":
     # 获取配置文件
     config = Util.get_config()
 
+    # 创建输出目录（如果不存在）
+    output_dir = Util.get_process_dir() + "output"
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
     # 创建 LLM 对象
     llm = ChatGLM_LLM(config.get("LLM").get("ChatGLM"))
     resource = llm.generate_response("你好，你是谁？请用粤语回答")

@@ -1,0 +1,24 @@
+# 忽略ffmpeg文件夹
+CyberAI/ai_core/ffmpeg-master-latest-win64-gpl/
+
+# 忽略ASR模型文件夹
+CyberAI/ai_core/asr/funasr/model/
+
+# 忽略output文件夹
+CyberAI/output/
+
+# 忽略配置文件
+CyberAI/config.yaml
+
+# 忽略Python缓存目录
+__pycache__/
+**/__pycache__/
+
+
+
+# 其他可能需要忽略的文件类型
+*.log
+*.tmp
+*.cache
+.DS_Store
+Thumbs.db

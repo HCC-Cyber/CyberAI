@@ -6,6 +6,7 @@ import opuslib_next
 import numpy as np
 import pickle  
 from typing import List 
+from utils.util import Util  # 导入 Util 类
 
 class Opus_Encoder:
     _instance = None
@@ -27,8 +28,8 @@ class Opus_Encoder:
         
         # 如果没有提供 ffmpeg 路径，则使用相对路径
         if ffmpeg_path is None:
-            # 使用相对于当前工作目录的路径
-            self.ffmpeg_path = os.path.join('ai_core', 'ffmpeg-master-latest-win64-gpl', 'bin', 'ffmpeg.exe')
+            # 使用 Util.get_process_dir() 获取项目根目录，然后拼接 FFmpeg 路径
+            self.ffmpeg_path = os.path.join(Util.get_process_dir(), 'ai_core', 'ffmpeg-master-latest-win64-gpl', 'bin', 'ffmpeg.exe')
         else:
             # 如果提供的是相对路径，转换为绝对路径
             self.ffmpeg_path = os.path.abspath(ffmpeg_path)
