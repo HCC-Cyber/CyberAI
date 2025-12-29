@@ -32,7 +32,7 @@ CyberAI/
 
 ### 3.1 语音识别模块 (ASR)
 - **文件路径**: `ai_core/asr/funasr/funasr_wrapper.py`
-- **功能**: 使用FunASR进行语音识别，支持音频文件识别和Opus数据包识别
+- **功能**: 使用FunASR进行语音识别，支持音频文件识别和Opus数据包识别，模型使用Model Download模块下载的模型。
 - **核心类**: [FunASRWrapper](file:CyberAI/ai_core/asr/funasr/funasr_wrapper.py#L7-L52)
 - **主要方法**:
   - [audio_file_to_text(audio_file_path)](file:CyberAI/ai_core/asr/funasr/funasr_wrapper.py#L39-L46): 将音频文件转换为文本
@@ -73,7 +73,7 @@ CyberAI/
 
 ### 3.6 模型下载模块 (Model Download)
 - **文件路径**: `ai_core/model_download.py`
-- **功能**: 下载和管理AI模型
+- **功能**: 下载和管理AI模型,目前使用SenseVoiceSmall模型
 - **核心类**: [ModelDownloader](file:CyberAI/ai_core/model_download.py#L14-L184)
 - **主要方法**:
   - [download(force_download=False)](file:CyberAI/ai_core/model_download.py#L76-L118): 下载模型
